@@ -1,0 +1,287 @@
+/*Header */
+
+.site-header {
+  background: #111111;
+  padding: 1rem 0;
+  font-family: 'BadBlocksTT', sans-serif;
+}
+
+.main-nav li:not(:last-child)::after {
+  content: "❐";
+  margin-left: 12px;
+  color: #888;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #F6E5BE;
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allow items to move to next line */
+}
+
+header nav a {
+  text-decoration: none;
+  white-space: nowrap; /* prevent text inside link from breaking */
+}
+
+#primary-navigation a:nth-child(5) {
+  flex-basis: 100%;
+}
+
+#primary-navigation {
+  width: 100%; /* force nav to take full width */
+  flex-wrap: wrap; /* allows wrapping */
+  gap: 1rem;
+}
+
+#primary-navigation.active {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .main-nav.active ul {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+
+/* Home Page */
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  max-height: 1500px;
+}
+
+.grid-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.box {
+  padding: 1rem;
+  background: #F6E5BE;
+  text-align: center;
+  border-style: outset;
+  border-width: 15px;
+  border-color: #E0C47F;
+  margin: 2rem;
+}
+
+
+/* Blogs */
+.blog-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* LEFT SIDE */
+.blog-main {
+  background-color: #e6f0ff; /* light blue */
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* RIGHT SIDEBAR */
+.blog-sidebar {
+  background-color: #ffe6e6; /* light red */
+  padding: 1.5rem;
+  border-radius: 8px;
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+}
+
+.blog-preview {
+  margin-bottom: 2rem;
+}
+
+.blog-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-sidebar a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: #111111;
+  color: #F6E5BE;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.footer-headings {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-headings h2 {
+  font-size: 1.2rem;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+
+ .footer-img-box img {
+    max-width: 100px;
+    width: 200px;
+    max-height: 75px;
+    border-radius: 15px;
+    background: #5F92D5;
+    background: radial-gradient(circle, rgba(95, 146, 213, 1) 0%, rgba(85, 170, 181, 1) 45%, rgba(10, 33, 72, 1) 100%);
+    margin: 1px;
+  border-style: groove;
+  border-color: rgba(7, 40, 97, 0.61);
+    
+}
+
+.ana-fem {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 0.9rem;
+  padding: 50px;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: white;
+}
+
+
+/* THEME */
+
+body {
+  margin: 0;
+  background-image: url('/images/abdulla-collage-BG.jpg');
+  background-size: 450px;
+  background-repeat: repeat;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+               'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+               'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bg-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;          /* CRITICAL */
+  pointer-events: none; /* prevents blocking clicks */
+}
+
+
+.bg-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 450px;
+  background-repeat: repeat;
+  background-position: top left;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.bg-slide.active {
+  opacity: 1;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'BadBlocksTT';
+  src: url('/fonts/BadBlocksTT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*h1, h2, h3, h4, h5, h6,
+.site-header {
+  font-family: 'BadBlocksTT', sans-serif;
+} */
+
+
+
+/* Mobile CSS */
+@media (min-width: 900px) {
+  .grid-3 {
+    flex-direction: row;
+  }
+
+}
