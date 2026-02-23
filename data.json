@@ -1,0 +1,23 @@
+{
+  "name": "Root",
+  "children": [
+    {
+      "name": "Category 1",
+      "children": [
+        { "name": "Example Link A", "url": "https://example.com" }
+      ]
+    },
+    {
+      "name": "Category 2",
+      "children": [
+        { "name": "Example Link B", "url": "https://example.com" }
+      ]
+    },
+    {
+      "name": "Category 3",
+      "children": [
+        { "name": "Example Link C", "url": "https://example.com" }
+      ]
+    }
+  ]
+}

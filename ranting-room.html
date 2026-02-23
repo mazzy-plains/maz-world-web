@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href= "css/style.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <title>Maz Worldz</title>
+  <title>Ranting Room [Blogs]</title>
 </head>
-
     <script>
     document.querySelector(".nav-toggle").addEventListener("click", function () {
     document.querySelector(".main-nav").classList.toggle("active");
@@ -40,33 +39,68 @@
         <li><a href="resources.html">Hacker Toolkit</a></li>
       </ul>
     </nav>
-  </dv>
+  </div>
+
 </header>
-
-<body>
-    <main>
-    <section class="grid-3">
-        <div class="box">
-        <h2>Box 1</h2>
-        <p>Placeholder content.</p>
-        </div>
-
-        <div class="box">
-        <!-- <h2>Box 2</h2> -->
-        <p>In this wacky world, my name is <strong>Maz</strong>. <br></br>
-        </p>Here at Maz Worldz, I acknowledge the world has gone wild, and instead of "fixing it", I'm ready to reinvent it.  </p>
-        </div>
-        
-        
-        <div class="box">
-        <h2>Box 3</h2>
-        <p>Placeholder content.</p>
-        </div> 
+<body> 
+    <!-- Heading Block -->
+    <section class="about-header">
+        <h1>Ranting Room [Blogs]</h1>
     </section>
+
+    <main class="reading-room-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar-left">
+        <div class="text-box">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Ecology</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Philosophy</a></li>
+        </ul>
+
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="post-3.html">Post Title 3</a></li>
+            <li><a href="post-2.html">Post Title 2</a></li>
+            <li><a href="post-1.html">Post Title 1</a></li>
+        </ul>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <section class="reading-content">
+        <div class="text-box">
+        <h1>Reading Room</h1>
+        <p>Introductory description of this section.</p>
+
+        <article>
+            <h2><a href="post-3.html">Post Title 3</a></h2>
+            <p>Short excerpt preview...</p>
+        </article>
+
+        <article>
+            <h2><a href="post-2.html">Post Title 2</a></h2>
+            <p>Short excerpt preview...</p>
+        </article>
+        </div>
+    </section>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="sidebar-right">
+        <div class="text-box">
+        <h3>Browse</h3>
+        <ul>
+            <li><a href="post-1.html">Post 1</a></li>
+            <li><a href="post-2.html">Post 2</a></li>
+            <li><a href="post-3.html">Post 3</a></li>
+        </ul>
+        </div>
+    </aside>
+
     </main>
-
 </body>
-
 <!-- BG Slideshow-->
   <div class="bg-slideshow">
     <div class="bg-slide active" style="background-image: url('../images/abdulla-collage-BG.jpg');"></div>
@@ -74,6 +108,8 @@
     <div class="bg-slide" style="background-image: url('../images/niles-collageBG.jpg');"></div>
       <div class="bg-slide" style="background-image: url('../images/oetelaar-collage-BG.jpg');"></div>
   </div>
+
+  <!-- your normal site content below -->
 
 
         <footer class="site-footer">
@@ -105,4 +141,3 @@
         </footer>
 
 </html>
-

@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href= "css/style.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <title>Maz Worldz</title>
+  <title>Who is Maz?</title>
 </head>
-
     <script>
     document.querySelector(".nav-toggle").addEventListener("click", function () {
     document.querySelector(".main-nav").classList.toggle("active");
@@ -40,31 +39,84 @@
         <li><a href="resources.html">Hacker Toolkit</a></li>
       </ul>
     </nav>
-  </dv>
+  </div>
+
 </header>
-
 <body>
-    <main>
-    <section class="grid-3">
-        <div class="box">
-        <h2>Box 1</h2>
-        <p>Placeholder content.</p>
-        </div>
+    <main class="dialogue-page">
 
-        <div class="box">
-        <!-- <h2>Box 2</h2> -->
-        <p>In this wacky world, my name is <strong>Maz</strong>. <br></br>
-        </p>Here at Maz Worldz, I acknowledge the world has gone wild, and instead of "fixing it", I'm ready to reinvent it.  </p>
-        </div>
-        
-        
-        <div class="box">
-        <h2>Box 3</h2>
-        <p>Placeholder content.</p>
-        </div> 
+    <!-- Title -->
+    <section class="about-header">
+        <h1>Dialogue Section</h1>
     </section>
-    </main>
 
+    <!-- Two Column Grid (Speech + Thought Bubbles) -->
+    <section class="bubble-grid">
+
+        <!-- Row 1 -->
+        <div class="bubble empty"></div>
+
+        <div class="bubble thought-box">
+        <div class="text-box">
+            <h2>Thought Bubble</h2>
+            <p>Your reflective or conceptual text here.</p>
+        </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="bubble speech-box">
+        <div class="text-box">
+            <h2>Speech Bubble</h2>
+            <p>Direct voice or statement text here.</p>
+        </div>
+        </div>
+
+        <div class="bubble empty"></div>
+
+    </section>
+
+    <!-- Subsection -->
+    <section class="dialogue-subsection">
+        <div class="text-box small-box">
+        <h2>Subsection Title</h2>
+        <p>Supporting explanation text.</p>
+        </div>
+    </section>
+
+    <!-- Numbered Sections -->
+    <section class="numbered-grid">
+
+        <div class="number-card">
+        <div class="text-box">
+            <h3>01</h3>
+            <p>First key idea.</p>
+        </div>
+        </div>
+
+        <div class="number-card">
+        <div class="text-box">
+            <h3>02</h3>
+            <p>Second key idea.</p>
+        </div>
+        </div>
+
+        <div class="number-card">
+        <div class="text-box">
+            <h3>03</h3>
+            <p>Third key idea.</p>
+        </div>
+        </div>
+
+        <div class="number-card">
+        <div class="text-box">
+            <h3>04</h3>
+            <p>Fourth key idea.</p>
+        </div>
+        </div>
+
+    </section>
+
+    </main>
 </body>
 
 <!-- BG Slideshow-->
@@ -74,6 +126,8 @@
     <div class="bg-slide" style="background-image: url('../images/niles-collageBG.jpg');"></div>
       <div class="bg-slide" style="background-image: url('../images/oetelaar-collage-BG.jpg');"></div>
   </div>
+
+  <!-- your normal site content below -->
 
 
         <footer class="site-footer">
@@ -105,4 +159,3 @@
         </footer>
 
 </html>
-
